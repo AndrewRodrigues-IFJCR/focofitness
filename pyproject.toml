@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "focofitness"
+version = "0.1.0"
+description = ""
+authors = ["AndrewRodrigues-IFJCR <andrew.rodrigues@aluno.ifsp.edu.br>"]
+license = "GNU"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.111.1"}
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.31"}
+pwdlib = {extras = ["argon2"], version = "^0.2.0"}
+flet = "^0.23.2"
+alembic = "^1.13.2"
+asyncpg = "^0.29.0"
+python-dotenv = "^1.0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+blue = "^0.9.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
